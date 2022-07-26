@@ -4,7 +4,7 @@ package cpan131chessgame;
 public class Bishop extends Tile{ 
     
     // pieceColor is enum for either "BLACK" or "WHITE"
-    Player pieceColor;
+    protected final Player pieceColor;
     protected int currentX;
     protected int currentY;
     
@@ -27,6 +27,8 @@ public class Bishop extends Tile{
         return currentY;
     }
 
+    // No reason to have setter for pieceColor as it will never change // 
+    
     public void setCurrentX(int currentX) {
         this.currentX = currentX;
     }
