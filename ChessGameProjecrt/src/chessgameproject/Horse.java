@@ -21,6 +21,7 @@ public class Horse extends PlayerPieces {
                 return true;
             } else {
                 System.out.println("move not allowed");
+                return false;
             }
 
         } else {
@@ -29,7 +30,6 @@ public class Horse extends PlayerPieces {
             return false;
         }
 
-        return true;
     }
 
     @Override
